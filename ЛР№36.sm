@@ -4,7 +4,7 @@
   <settings ppi="120">
     <identity>
       <id>d6dc828d-8677-4eda-8bb2-988e7e24440a</id>
-      <revision>56</revision>
+      <revision>60</revision>
     </identity>
     <metadata lang="rus">
       <author>Михаил Маркин</author>
@@ -1428,6 +1428,24 @@
         </result>
       </math>
     </region>
+    <region left="369" top="3591" width="84" height="34" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">n.down</e>
+          <e type="operand">8</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="468" top="3591" width="78" height="34" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">n.up</e>
+          <e type="operand">31</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
     <region left="0" top="4005" width="485" height="23" color="#000000" fontSize="10">
       <text lang="rus" width="481" fontFamily="Arial" fontSize="10">
         <content>
@@ -1464,7 +1482,7 @@
         </content>
       </text>
     </region>
-    <region left="0" top="4338" width="739" height="694" color="#000000" fontSize="8">
+    <region left="0" top="4338" width="739" height="694" color="#000000" fontSize="8" showInputData="false">
       <xyplot width="729" height="686" points="100" name="XYPlot">
         <chartstyle usedefault="false" backcolor="White" bordercolor="Black" />
         <grid gridcolor="DimGray" gridpattern="Dash" gridthickness="1" isxgrid="true" isygrid="true" isy2grid="false" />
@@ -1528,7 +1546,7 @@
           <e type="function" args="1">vectorize</e>
           <e type="function" args="2">augment</e>
           <e type="operand">τ</e>
-          <e type="operand">8</e>
+          <e type="operand">n.down</e>
           <e type="function" args="2">el</e>
           <e type="operand">#</e>
           <e type="operand">2</e>
@@ -1536,7 +1554,7 @@
           <e type="function" args="4">mat</e>
           <e type="function" args="1">augment</e>
           <e type="operand">τ</e>
-          <e type="operand">31</e>
+          <e type="operand">n.up</e>
           <e type="function" args="2">el</e>
           <e type="operand">#</e>
           <e type="operand">2</e>
@@ -1556,11 +1574,11 @@
         </content>
       </text>
     </region>
-    <region left="0" top="5490" width="99" height="33" color="#000000" fontSize="10">
+    <region left="0" top="5490" width="127" height="39" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">τ</e>
-          <e type="operand">8</e>
+          <e type="operand">n.down</e>
           <e type="function" args="2">el</e>
         </input>
         <result action="numeric">
@@ -1570,11 +1588,11 @@
         </result>
       </math>
     </region>
-    <region left="126" top="5490" width="91" height="33" color="#000000" fontSize="10">
+    <region left="126" top="5490" width="98" height="39" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">τ</e>
-          <e type="operand">31</e>
+          <e type="operand">n.up</e>
           <e type="function" args="2">el</e>
         </input>
         <result action="numeric">
@@ -1584,25 +1602,11 @@
         </result>
       </math>
     </region>
-    <region left="0" top="5517" width="98" height="39" color="#000000" fontSize="10">
+    <region left="126" top="5517" width="105" height="45" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">θ.1</e>
-          <e type="operand">8</e>
-          <e type="function" args="2">el</e>
-        </input>
-        <result action="numeric">
-          <e type="operand">13.3</e>
-          <e type="operand" style="unit">K</e>
-          <e type="operator" args="2">*</e>
-        </result>
-      </math>
-    </region>
-    <region left="126" top="5517" width="98" height="39" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">θ.1</e>
-          <e type="operand">31</e>
+          <e type="operand">n.up</e>
           <e type="function" args="2">el</e>
         </input>
         <result action="numeric">
@@ -1612,123 +1616,11 @@
         </result>
       </math>
     </region>
-    <region left="0" top="5553" width="98" height="39" color="#000000" fontSize="10">
+    <region left="0" top="5526" width="125" height="45" color="#000000" fontSize="10">
       <math>
         <input>
-          <e type="operand">θ.2</e>
-          <e type="operand">8</e>
-          <e type="function" args="2">el</e>
-        </input>
-        <result action="numeric">
-          <e type="operand">19.1</e>
-          <e type="operand" style="unit">K</e>
-          <e type="operator" args="2">*</e>
-        </result>
-      </math>
-    </region>
-    <region left="126" top="5553" width="98" height="39" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">θ.2</e>
-          <e type="operand">31</e>
-          <e type="function" args="2">el</e>
-        </input>
-        <result action="numeric">
-          <e type="operand">2.7</e>
-          <e type="operand" style="unit">K</e>
-          <e type="operator" args="2">*</e>
-        </result>
-      </math>
-    </region>
-    <region left="0" top="5589" width="98" height="39" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">θ.3</e>
-          <e type="operand">8</e>
-          <e type="function" args="2">el</e>
-        </input>
-        <result action="numeric">
-          <e type="operand">19.6</e>
-          <e type="operand" style="unit">K</e>
-          <e type="operator" args="2">*</e>
-        </result>
-      </math>
-    </region>
-    <region left="126" top="5589" width="106" height="39" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">θ.3</e>
-          <e type="operand">31</e>
-          <e type="function" args="2">el</e>
-        </input>
-        <result action="numeric">
-          <e type="operand">11.4</e>
-          <e type="operand" style="unit">K</e>
-          <e type="operator" args="2">*</e>
-        </result>
-      </math>
-    </region>
-    <region left="0" top="5625" width="98" height="39" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">θ.4</e>
-          <e type="operand">8</e>
-          <e type="function" args="2">el</e>
-        </input>
-        <result action="numeric">
-          <e type="operand">20.3</e>
-          <e type="operand" style="unit">K</e>
-          <e type="operator" args="2">*</e>
-        </result>
-      </math>
-    </region>
-    <region left="126" top="5625" width="106" height="39" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">θ.4</e>
-          <e type="operand">31</e>
-          <e type="function" args="2">el</e>
-        </input>
-        <result action="numeric">
-          <e type="operand">11.9</e>
-          <e type="operand" style="unit">K</e>
-          <e type="operator" args="2">*</e>
-        </result>
-      </math>
-    </region>
-    <region left="0" top="5661" width="98" height="39" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">θ.5</e>
-          <e type="operand">8</e>
-          <e type="function" args="2">el</e>
-        </input>
-        <result action="numeric">
-          <e type="operand">14.6</e>
-          <e type="operand" style="unit">K</e>
-          <e type="operator" args="2">*</e>
-        </result>
-      </math>
-    </region>
-    <region left="126" top="5661" width="106" height="39" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">θ.5</e>
-          <e type="operand">31</e>
-          <e type="function" args="2">el</e>
-        </input>
-        <result action="numeric">
-          <e type="operand">14.6</e>
-          <e type="operand" style="unit">K</e>
-          <e type="operator" args="2">*</e>
-        </result>
-      </math>
-    </region>
-    <region left="0" top="5697" width="98" height="39" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">θ.6</e>
-          <e type="operand">8</e>
+          <e type="operand">θ.1</e>
+          <e type="operand">n.down</e>
           <e type="function" args="2">el</e>
         </input>
         <result action="numeric">
@@ -1738,15 +1630,141 @@
         </result>
       </math>
     </region>
-    <region left="126" top="5697" width="90" height="39" color="#000000" fontSize="10">
+    <region left="126" top="5553" width="105" height="45" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ.2</e>
+          <e type="operand">n.up</e>
+          <e type="function" args="2">el</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">2.7</e>
+          <e type="operand" style="unit">K</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="5562" width="125" height="45" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ.2</e>
+          <e type="operand">n.down</e>
+          <e type="function" args="2">el</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">19.1</e>
+          <e type="operand" style="unit">K</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="126" top="5589" width="113" height="45" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ.3</e>
+          <e type="operand">n.up</e>
+          <e type="function" args="2">el</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">11.4</e>
+          <e type="operand" style="unit">K</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="5598" width="125" height="45" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ.3</e>
+          <e type="operand">n.down</e>
+          <e type="function" args="2">el</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">19.6</e>
+          <e type="operand" style="unit">K</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="126" top="5625" width="113" height="45" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ.4</e>
+          <e type="operand">n.up</e>
+          <e type="function" args="2">el</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">11.9</e>
+          <e type="operand" style="unit">K</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="5634" width="125" height="45" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ.4</e>
+          <e type="operand">n.down</e>
+          <e type="function" args="2">el</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">20.3</e>
+          <e type="operand" style="unit">K</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="126" top="5661" width="113" height="45" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ.5</e>
+          <e type="operand">n.up</e>
+          <e type="function" args="2">el</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">14.6</e>
+          <e type="operand" style="unit">K</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="5670" width="125" height="45" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ.5</e>
+          <e type="operand">n.down</e>
+          <e type="function" args="2">el</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">14.6</e>
+          <e type="operand" style="unit">K</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="126" top="5697" width="97" height="45" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">θ.6</e>
-          <e type="operand">31</e>
+          <e type="operand">n.up</e>
           <e type="function" args="2">el</e>
         </input>
         <result action="numeric">
           <e type="operand">10</e>
+          <e type="operand" style="unit">K</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="5706" width="125" height="45" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ.6</e>
+          <e type="operand">n.down</e>
+          <e type="function" args="2">el</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">13.3</e>
           <e type="operand" style="unit">K</e>
           <e type="operator" args="2">*</e>
         </result>
@@ -1759,28 +1777,28 @@
         </content>
       </text>
     </region>
-    <region left="0" top="5769" width="296" height="84" color="#000000" fontSize="10">
+    <region left="0" top="5769" width="275" height="77" color="#000000" fontSize="8">
       <math>
         <input>
           <e type="operand">m.1</e>
           <e type="operand">θ.1</e>
-          <e type="operand">8</e>
+          <e type="operand">n.down</e>
           <e type="function" args="2">el</e>
           <e type="operand" style="unit">K</e>
           <e type="operator" args="2">/</e>
           <e type="function" args="1">ln</e>
           <e type="operand">θ.1</e>
-          <e type="operand">31</e>
+          <e type="operand">n.up</e>
           <e type="function" args="2">el</e>
           <e type="operand" style="unit">K</e>
           <e type="operator" args="2">/</e>
           <e type="function" args="1">ln</e>
           <e type="operator" args="2">-</e>
           <e type="operand">τ</e>
-          <e type="operand">31</e>
+          <e type="operand">n.up</e>
           <e type="function" args="2">el</e>
           <e type="operand">τ</e>
-          <e type="operand">8</e>
+          <e type="operand">n.down</e>
           <e type="function" args="2">el</e>
           <e type="operator" args="2">-</e>
           <e type="operator" args="2">/</e>
@@ -1797,28 +1815,28 @@
         </result>
       </math>
     </region>
-    <region left="0" top="5850" width="296" height="84" color="#000000" fontSize="10">
+    <region left="0" top="5850" width="275" height="77" color="#000000" fontSize="8">
       <math>
         <input>
           <e type="operand">m.2</e>
           <e type="operand">θ.2</e>
-          <e type="operand">8</e>
+          <e type="operand">n.down</e>
           <e type="function" args="2">el</e>
           <e type="operand" style="unit">K</e>
           <e type="operator" args="2">/</e>
           <e type="function" args="1">ln</e>
           <e type="operand">θ.2</e>
-          <e type="operand">31</e>
+          <e type="operand">n.up</e>
           <e type="function" args="2">el</e>
           <e type="operand" style="unit">K</e>
           <e type="operator" args="2">/</e>
           <e type="function" args="1">ln</e>
           <e type="operator" args="2">-</e>
           <e type="operand">τ</e>
-          <e type="operand">31</e>
+          <e type="operand">n.up</e>
           <e type="function" args="2">el</e>
           <e type="operand">τ</e>
-          <e type="operand">8</e>
+          <e type="operand">n.down</e>
           <e type="function" args="2">el</e>
           <e type="operator" args="2">-</e>
           <e type="operator" args="2">/</e>
@@ -1835,28 +1853,28 @@
         </result>
       </math>
     </region>
-    <region left="0" top="5931" width="296" height="84" color="#000000" fontSize="10">
+    <region left="0" top="5931" width="275" height="77" color="#000000" fontSize="8">
       <math>
         <input>
           <e type="operand">m.3</e>
           <e type="operand">θ.3</e>
-          <e type="operand">8</e>
+          <e type="operand">n.down</e>
           <e type="function" args="2">el</e>
           <e type="operand" style="unit">K</e>
           <e type="operator" args="2">/</e>
           <e type="function" args="1">ln</e>
           <e type="operand">θ.3</e>
-          <e type="operand">31</e>
+          <e type="operand">n.up</e>
           <e type="function" args="2">el</e>
           <e type="operand" style="unit">K</e>
           <e type="operator" args="2">/</e>
           <e type="function" args="1">ln</e>
           <e type="operator" args="2">-</e>
           <e type="operand">τ</e>
-          <e type="operand">31</e>
+          <e type="operand">n.up</e>
           <e type="function" args="2">el</e>
           <e type="operand">τ</e>
-          <e type="operand">8</e>
+          <e type="operand">n.down</e>
           <e type="function" args="2">el</e>
           <e type="operator" args="2">-</e>
           <e type="operator" args="2">/</e>
@@ -1873,28 +1891,28 @@
         </result>
       </math>
     </region>
-    <region left="0" top="6012" width="296" height="84" color="#000000" fontSize="10">
+    <region left="0" top="6012" width="275" height="77" color="#000000" fontSize="8">
       <math>
         <input>
           <e type="operand">m.4</e>
           <e type="operand">θ.4</e>
-          <e type="operand">8</e>
+          <e type="operand">n.down</e>
           <e type="function" args="2">el</e>
           <e type="operand" style="unit">K</e>
           <e type="operator" args="2">/</e>
           <e type="function" args="1">ln</e>
           <e type="operand">θ.4</e>
-          <e type="operand">31</e>
+          <e type="operand">n.up</e>
           <e type="function" args="2">el</e>
           <e type="operand" style="unit">K</e>
           <e type="operator" args="2">/</e>
           <e type="function" args="1">ln</e>
           <e type="operator" args="2">-</e>
           <e type="operand">τ</e>
-          <e type="operand">31</e>
+          <e type="operand">n.up</e>
           <e type="function" args="2">el</e>
           <e type="operand">τ</e>
-          <e type="operand">8</e>
+          <e type="operand">n.down</e>
           <e type="function" args="2">el</e>
           <e type="operator" args="2">-</e>
           <e type="operator" args="2">/</e>
@@ -1911,28 +1929,28 @@
         </result>
       </math>
     </region>
-    <region left="0" top="6093" width="221" height="84" color="#000000" fontSize="10">
+    <region left="0" top="6093" width="216" height="77" color="#000000" fontSize="8">
       <math>
         <input>
           <e type="operand">m.5</e>
           <e type="operand">θ.5</e>
-          <e type="operand">8</e>
+          <e type="operand">n.down</e>
           <e type="function" args="2">el</e>
           <e type="operand" style="unit">K</e>
           <e type="operator" args="2">/</e>
           <e type="function" args="1">ln</e>
           <e type="operand">θ.5</e>
-          <e type="operand">31</e>
+          <e type="operand">n.up</e>
           <e type="function" args="2">el</e>
           <e type="operand" style="unit">K</e>
           <e type="operator" args="2">/</e>
           <e type="function" args="1">ln</e>
           <e type="operator" args="2">-</e>
           <e type="operand">τ</e>
-          <e type="operand">31</e>
+          <e type="operand">n.up</e>
           <e type="function" args="2">el</e>
           <e type="operand">τ</e>
-          <e type="operand">8</e>
+          <e type="operand">n.down</e>
           <e type="function" args="2">el</e>
           <e type="operator" args="2">-</e>
           <e type="operator" args="2">/</e>
@@ -1943,28 +1961,28 @@
         </result>
       </math>
     </region>
-    <region left="0" top="6174" width="296" height="84" color="#000000" fontSize="10">
+    <region left="0" top="6174" width="275" height="77" color="#000000" fontSize="8">
       <math>
         <input>
           <e type="operand">m.6</e>
           <e type="operand">θ.6</e>
-          <e type="operand">8</e>
+          <e type="operand">n.down</e>
           <e type="function" args="2">el</e>
           <e type="operand" style="unit">K</e>
           <e type="operator" args="2">/</e>
           <e type="function" args="1">ln</e>
           <e type="operand">θ.6</e>
-          <e type="operand">31</e>
+          <e type="operand">n.up</e>
           <e type="function" args="2">el</e>
           <e type="operand" style="unit">K</e>
           <e type="operator" args="2">/</e>
           <e type="function" args="1">ln</e>
           <e type="operator" args="2">-</e>
           <e type="operand">τ</e>
-          <e type="operand">31</e>
+          <e type="operand">n.up</e>
           <e type="function" args="2">el</e>
           <e type="operand">τ</e>
-          <e type="operand">8</e>
+          <e type="operand">n.down</e>
           <e type="function" args="2">el</e>
           <e type="operator" args="2">-</e>
           <e type="operator" args="2">/</e>
