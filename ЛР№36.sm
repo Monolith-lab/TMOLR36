@@ -4,7 +4,7 @@
   <settings ppi="120">
     <identity>
       <id>d6dc828d-8677-4eda-8bb2-988e7e24440a</id>
-      <revision>60</revision>
+      <revision>66</revision>
     </identity>
     <metadata lang="rus">
       <author>Михаил Маркин</author>
@@ -2289,16 +2289,16 @@
         <input>
           <e type="operand">μ.1</e>
           <e type="operand">t.8</e>
-          <e type="operand">1</e>
+          <e type="operand">9</e>
           <e type="function" args="2">el</e>
-          <e type="operand">t.1</e>
-          <e type="operand">1</e>
+          <e type="operand">t.2</e>
+          <e type="operand">9</e>
           <e type="function" args="2">el</e>
           <e type="operator" args="2">-</e>
           <e type="operand">t.8</e>
-          <e type="operand">1</e>
+          <e type="operand">9</e>
           <e type="function" args="2">el</e>
-          <e type="operand">t.2</e>
+          <e type="operand">t.1</e>
           <e type="operand">1</e>
           <e type="function" args="2">el</e>
           <e type="operator" args="2">-</e>
@@ -2342,9 +2342,9 @@
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">2.2364</e>
+          <e type="operand">2.5012</e>
           <e type="operator" args="1">-</e>
-          <e type="operand">2.2364</e>
+          <e type="operand">2.5012</e>
           <e type="operand">2</e>
           <e type="operand">1</e>
           <e type="function" args="4">mat</e>
@@ -2395,641 +2395,162 @@
         </content>
       </text>
     </region>
-    <region left="0" top="7623" width="712" height="38" color="#000000" fontSize="10">
+    <region left="0" top="7623" width="308" height="23" color="#000000" fontSize="10">
       <text lang="rus" fontFamily="Arial" fontSize="10">
         <content>
-          <p>Ввиду отсутсвия коэффициента теплоотдачи примем, что температура на внешней стенке приближённо равна температуре в водяной камере, тогда получим следующий закон:</p>
+          <p>Построим график по сечению калориметра №1</p>
         </content>
       </text>
     </region>
-    <region left="0" top="7668" width="169" height="89" color="#000000" fontSize="10">
+    <region left="0" top="7686" width="141" height="156" color="#000000" fontSize="12">
       <math>
         <input>
-          <e type="operand">q</e>
-          <e type="operand">π</e>
-          <e type="operand">t.8</e>
-          <e type="operand">1</e>
-          <e type="function" args="2">el</e>
-          <e type="operand">t.1</e>
-          <e type="operand">1</e>
-          <e type="function" args="2">el</e>
-          <e type="operator" args="2">-</e>
-          <e type="bracket">(</e>
-          <e type="operator" args="2">*</e>
-          <e type="operand">1</e>
+          <e type="operand">x</e>
+          <e type="operand">D.1</e>
           <e type="operand">2</e>
-          <e type="operand">λ.полн</e>
-          <e type="operator" args="2">*</e>
           <e type="operator" args="2">/</e>
-          <e type="operand">D.2</e>
-          <e type="operand">D.2вн</e>
-          <e type="operator" args="2">/</e>
-          <e type="function" args="1">ln</e>
-          <e type="operator" args="2">*</e>
-          <e type="operator" args="2">/</e>
-          <e type="operator" args="2">≡</e>
-        </input>
-      </math>
-    </region>
-    <region left="0" top="7758" width="276" height="89" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">q</e>
-          <e type="operand">π</e>
-          <e type="operand">t.8</e>
-          <e type="operand">9</e>
-          <e type="function" args="2">el</e>
-          <e type="operand">t.1</e>
-          <e type="operand">9</e>
-          <e type="function" args="2">el</e>
-          <e type="operator" args="2">-</e>
-          <e type="bracket">(</e>
-          <e type="operator" args="2">*</e>
-          <e type="operand">1</e>
+          <e type="operand">D.1</e>
           <e type="operand">2</e>
-          <e type="operand">λ.полн</e>
-          <e type="operator" args="2">*</e>
           <e type="operator" args="2">/</e>
-          <e type="operand">D.2</e>
-          <e type="operand">D.2вн</e>
-          <e type="operator" args="2">/</e>
-          <e type="function" args="1">ln</e>
+          <e type="operand">0.707</e>
           <e type="operator" args="2">*</e>
-          <e type="operator" args="2">/</e>
-          <e type="operator" args="2">:</e>
-        </input>
-        <contract>
-          <e type="operand" style="unit">W</e>
-          <e type="operand" style="unit">m</e>
-          <e type="operator" args="2">/</e>
-        </contract>
-        <result action="numeric">
-          <e type="operand">113.0235</e>
-        </result>
-      </math>
-    </region>
-    <region left="0" top="7857" width="183" height="30" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">ΔD</e>
-          <e type="operand">D.2</e>
-          <e type="operand">D.2вн</e>
-          <e type="operator" args="2">-</e>
-          <e type="operator" args="2">:</e>
-        </input>
-        <result action="numeric">
-          <e type="operand">0.0008</e>
-          <e type="operand" style="unit">m</e>
-          <e type="operator" args="2">*</e>
-        </result>
-      </math>
-    </region>
-    <region left="0" top="7911" width="292" height="28" color="#000000" fontSize="10">
-      <math optimize="2">
-        <input>
-          <e type="operand">δD</e>
-          <e type="operand">0.0001</e>
-          <e type="operand" style="unit">m</e>
-          <e type="operator" args="2">*</e>
-          <e type="bracket">(</e>
-          <e type="operand">0.0008</e>
-          <e type="operand" style="unit">m</e>
-          <e type="operator" args="2">*</e>
-          <e type="bracket">(</e>
-          <e type="operand">0.0002</e>
-          <e type="operand" style="unit">m</e>
-          <e type="operator" args="2">*</e>
-          <e type="function" args="3">range</e>
-          <e type="operator" args="2">:</e>
-        </input>
-      </math>
-    </region>
-    <region left="0" top="7965" width="174" height="39" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">t.1eval</e>
-          <e type="operand">t.1</e>
-          <e type="operand">9</e>
-          <e type="function" args="2">el</e>
-          <e type="operator" args="2">:</e>
-        </input>
-        <result action="numeric">
-          <e type="operand">303.45</e>
-          <e type="operand" style="unit">K</e>
-          <e type="operator" args="2">*</e>
-        </result>
-      </math>
-    </region>
-    <region left="0" top="8001" width="321" height="78" color="#000000" fontSize="10">
-      <math optimize="2">
-        <input>
-          <e type="operand">t.промеж</e>
-          <e type="operand">q</e>
-          <e type="operand">1</e>
+          <e type="operand">D.1</e>
           <e type="operand">2</e>
-          <e type="operand">λ.полн</e>
-          <e type="operator" args="2">*</e>
           <e type="operator" args="2">/</e>
-          <e type="operand">D.2</e>
-          <e type="operand">D.2вн</e>
-          <e type="operand">δD</e>
-          <e type="operator" args="2">+</e>
-          <e type="operator" args="2">/</e>
-          <e type="function" args="1">ln</e>
-          <e type="operator" args="2">*</e>
-          <e type="operator" args="2">*</e>
-          <e type="operand">π</e>
-          <e type="operator" args="2">/</e>
-          <e type="operand">t.1eval</e>
-          <e type="operator" args="2">+</e>
-          <e type="function" args="1">vectorize</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">mat</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
     </region>
-    <region left="0" top="8082" width="288" height="159" color="#000000" fontSize="10">
-      <math optimize="2">
-        <input>
-          <e type="operand">t.1eval</e>
-          <e type="operand">t.1eval</e>
-          <e type="operand">1</e>
-          <e type="function" args="2">el</e>
-          <e type="operand">t.1</e>
-          <e type="operand">9</e>
-          <e type="function" args="2">el</e>
-          <e type="operator" args="2">:</e>
-          <e type="operand">i</e>
-          <e type="operand">1</e>
-          <e type="operand">t.промеж</e>
-          <e type="function" args="1">length</e>
-          <e type="function" args="2">range</e>
-          <e type="operand">t.1eval</e>
-          <e type="operand">i</e>
-          <e type="operand">1</e>
-          <e type="operator" args="2">+</e>
-          <e type="function" args="2">el</e>
-          <e type="operand">t.промеж</e>
-          <e type="operand">8</e>
-          <e type="operand">i</e>
-          <e type="operator" args="2">-</e>
-          <e type="function" args="2">el</e>
-          <e type="operator" args="2">:</e>
-          <e type="function" args="3">for</e>
-          <e type="operand">t.1eval</e>
-          <e type="operand">9</e>
-          <e type="function" args="2">el</e>
-          <e type="operand">t.8</e>
-          <e type="operand">9</e>
-          <e type="function" args="2">el</e>
-          <e type="operator" args="2">:</e>
-          <e type="operand">t.1eval</e>
-          <e type="operand">4</e>
-          <e type="operand">1</e>
-          <e type="function" args="6">line</e>
-          <e type="operator" args="2">:</e>
-        </input>
-      </math>
-    </region>
-    <region left="0" top="8244" width="263" height="32" color="#000000" fontSize="10">
-      <math optimize="2">
-        <input>
-          <e type="operand">δD.eval</e>
-          <e type="operand">D.2вн</e>
-          <e type="operand">D.2</e>
-          <e type="operand">D.2вн</e>
-          <e type="operand">0.0001</e>
-          <e type="operand" style="unit">m</e>
-          <e type="operator" args="2">*</e>
-          <e type="operator" args="2">+</e>
-          <e type="function" args="3">range</e>
-          <e type="operator" args="2">:</e>
-        </input>
-      </math>
-    </region>
-    <region left="0" top="8280" width="213" height="32" color="#000000" fontSize="10">
-      <math optimize="2">
+    <region left="162" top="7695" width="150" height="132" color="#000000" fontSize="12">
+      <math>
         <input>
           <e type="operand">T.1</e>
-          <e type="operand">δD.eval</e>
-          <e type="operand">t.1eval</e>
-          <e type="function" args="2">augment</e>
-          <e type="operator" args="2">:</e>
-        </input>
-      </math>
-    </region>
-    <region left="0" top="8622" width="268" height="89" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">q</e>
-          <e type="operand">π</e>
           <e type="operand">t.8</e>
-          <e type="operand">10</e>
-          <e type="function" args="2">el</e>
-          <e type="operand">t.1</e>
-          <e type="operand">10</e>
-          <e type="function" args="2">el</e>
-          <e type="operator" args="2">-</e>
-          <e type="bracket">(</e>
-          <e type="operator" args="2">*</e>
-          <e type="operand">1</e>
-          <e type="operand">2</e>
-          <e type="operand">λ.полн</e>
-          <e type="operator" args="2">*</e>
-          <e type="operator" args="2">/</e>
-          <e type="operand">D.2</e>
-          <e type="operand">D.2вн</e>
-          <e type="operator" args="2">/</e>
-          <e type="function" args="1">ln</e>
-          <e type="operator" args="2">*</e>
-          <e type="operator" args="2">/</e>
-          <e type="operator" args="2">:</e>
-        </input>
-        <contract>
-          <e type="operand" style="unit">W</e>
-          <e type="operand" style="unit">m</e>
-          <e type="operator" args="2">/</e>
-        </contract>
-        <result action="numeric">
-          <e type="operand">105.014</e>
-        </result>
-      </math>
-    </region>
-    <region left="0" top="8721" width="182" height="39" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">t.1eval</e>
-          <e type="operand">t.1</e>
-          <e type="operand">10</e>
-          <e type="function" args="2">el</e>
-          <e type="operator" args="2">:</e>
-        </input>
-        <result action="numeric">
-          <e type="operand">304.35</e>
-          <e type="operand" style="unit">K</e>
-          <e type="operator" args="2">*</e>
-        </result>
-      </math>
-    </region>
-    <region left="0" top="8757" width="321" height="78" color="#000000" fontSize="10">
-      <math optimize="2">
-        <input>
-          <e type="operand">t.промеж</e>
-          <e type="operand">q</e>
-          <e type="operand">1</e>
-          <e type="operand">2</e>
-          <e type="operand">λ.полн</e>
-          <e type="operator" args="2">*</e>
-          <e type="operator" args="2">/</e>
-          <e type="operand">D.2</e>
-          <e type="operand">D.2вн</e>
-          <e type="operand">δD</e>
-          <e type="operator" args="2">+</e>
-          <e type="operator" args="2">/</e>
-          <e type="function" args="1">ln</e>
-          <e type="operator" args="2">*</e>
-          <e type="operator" args="2">*</e>
-          <e type="operand">π</e>
-          <e type="operator" args="2">/</e>
-          <e type="operand">t.1eval</e>
-          <e type="operator" args="2">+</e>
-          <e type="function" args="1">vectorize</e>
-          <e type="operator" args="2">:</e>
-        </input>
-      </math>
-    </region>
-    <region left="0" top="8838" width="288" height="159" color="#000000" fontSize="10">
-      <math optimize="2">
-        <input>
-          <e type="operand">t.1eval</e>
-          <e type="operand">t.1eval</e>
-          <e type="operand">1</e>
-          <e type="function" args="2">el</e>
-          <e type="operand">t.1</e>
-          <e type="operand">10</e>
-          <e type="function" args="2">el</e>
-          <e type="operator" args="2">:</e>
-          <e type="operand">i</e>
-          <e type="operand">1</e>
-          <e type="operand">t.промеж</e>
-          <e type="function" args="1">length</e>
-          <e type="function" args="2">range</e>
-          <e type="operand">t.1eval</e>
-          <e type="operand">i</e>
-          <e type="operand">1</e>
-          <e type="operator" args="2">+</e>
-          <e type="function" args="2">el</e>
-          <e type="operand">t.промеж</e>
-          <e type="operand">8</e>
-          <e type="operand">i</e>
-          <e type="operator" args="2">-</e>
-          <e type="function" args="2">el</e>
-          <e type="operator" args="2">:</e>
-          <e type="function" args="3">for</e>
-          <e type="operand">t.1eval</e>
           <e type="operand">9</e>
           <e type="function" args="2">el</e>
-          <e type="operand">t.8</e>
-          <e type="operand">10</e>
+          <e type="operand">t.1</e>
+          <e type="operand">9</e>
           <e type="function" args="2">el</e>
-          <e type="operator" args="2">:</e>
-          <e type="operand">t.1eval</e>
-          <e type="operand">4</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">t.8</e>
+          <e type="operand">9</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">t.2</e>
+          <e type="operand">9</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">t.8</e>
+          <e type="operand">9</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">t.1</e>
+          <e type="operand">9</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">3</e>
           <e type="operand">1</e>
-          <e type="function" args="6">line</e>
+          <e type="function" args="5">mat</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
     </region>
-    <region left="0" top="9000" width="263" height="32" color="#000000" fontSize="10">
-      <math optimize="2">
-        <input>
-          <e type="operand">δD.eval</e>
-          <e type="operand">D.2вн</e>
-          <e type="operand">D.2</e>
-          <e type="operand">D.2вн</e>
-          <e type="operand">0.0001</e>
-          <e type="operand" style="unit">m</e>
-          <e type="operator" args="2">*</e>
-          <e type="operator" args="2">+</e>
-          <e type="function" args="3">range</e>
-          <e type="operator" args="2">:</e>
-        </input>
-      </math>
-    </region>
-    <region left="0" top="9036" width="213" height="32" color="#000000" fontSize="10">
-      <math optimize="2">
+    <region left="333" top="7695" width="169" height="132" color="#000000" fontSize="12">
+      <math>
         <input>
           <e type="operand">T.2</e>
-          <e type="operand">δD.eval</e>
-          <e type="operand">t.1eval</e>
-          <e type="function" args="2">augment</e>
-          <e type="operator" args="2">:</e>
-        </input>
-      </math>
-    </region>
-    <region left="0" top="9081" width="268" height="89" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">q</e>
-          <e type="operand">π</e>
           <e type="operand">t.8</e>
-          <e type="operand">11</e>
+          <e type="operand">10</e>
           <e type="function" args="2">el</e>
           <e type="operand">t.1</e>
-          <e type="operand">11</e>
+          <e type="operand">10</e>
           <e type="function" args="2">el</e>
           <e type="operator" args="2">-</e>
-          <e type="bracket">(</e>
-          <e type="operator" args="2">*</e>
-          <e type="operand">1</e>
-          <e type="operand">2</e>
-          <e type="operand">λ.полн</e>
-          <e type="operator" args="2">*</e>
-          <e type="operator" args="2">/</e>
-          <e type="operand">D.2</e>
-          <e type="operand">D.2вн</e>
-          <e type="operator" args="2">/</e>
-          <e type="function" args="1">ln</e>
-          <e type="operator" args="2">*</e>
-          <e type="operator" args="2">/</e>
-          <e type="operator" args="2">:</e>
-        </input>
-        <contract>
-          <e type="operand" style="unit">W</e>
-          <e type="operand" style="unit">m</e>
-          <e type="operator" args="2">/</e>
-        </contract>
-        <result action="numeric">
-          <e type="operand">99.6743</e>
-        </result>
-      </math>
-    </region>
-    <region left="0" top="9171" width="182" height="39" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">t.1eval</e>
-          <e type="operand">t.1</e>
-          <e type="operand">11</e>
-          <e type="function" args="2">el</e>
-          <e type="operator" args="2">:</e>
-        </input>
-        <result action="numeric">
-          <e type="operand">304.95</e>
-          <e type="operand" style="unit">K</e>
-          <e type="operator" args="2">*</e>
-        </result>
-      </math>
-    </region>
-    <region left="0" top="9207" width="321" height="78" color="#000000" fontSize="10">
-      <math optimize="2">
-        <input>
-          <e type="operand">t.промеж</e>
-          <e type="operand">q</e>
-          <e type="operand">1</e>
-          <e type="operand">2</e>
-          <e type="operand">λ.полн</e>
-          <e type="operator" args="2">*</e>
-          <e type="operator" args="2">/</e>
-          <e type="operand">D.2</e>
-          <e type="operand">D.2вн</e>
-          <e type="operand">δD</e>
-          <e type="operator" args="2">+</e>
-          <e type="operator" args="2">/</e>
-          <e type="function" args="1">ln</e>
-          <e type="operator" args="2">*</e>
-          <e type="operator" args="2">*</e>
-          <e type="operand">π</e>
-          <e type="operator" args="2">/</e>
-          <e type="operand">t.1eval</e>
-          <e type="operator" args="2">+</e>
-          <e type="function" args="1">vectorize</e>
-          <e type="operator" args="2">:</e>
-        </input>
-      </math>
-    </region>
-    <region left="0" top="9288" width="288" height="159" color="#000000" fontSize="10">
-      <math optimize="2">
-        <input>
-          <e type="operand">t.1eval</e>
-          <e type="operand">t.1eval</e>
-          <e type="operand">1</e>
-          <e type="function" args="2">el</e>
-          <e type="operand">t.1</e>
-          <e type="operand">11</e>
-          <e type="function" args="2">el</e>
-          <e type="operator" args="2">:</e>
-          <e type="operand">i</e>
-          <e type="operand">1</e>
-          <e type="operand">t.промеж</e>
-          <e type="function" args="1">length</e>
-          <e type="function" args="2">range</e>
-          <e type="operand">t.1eval</e>
-          <e type="operand">i</e>
-          <e type="operand">1</e>
-          <e type="operator" args="2">+</e>
-          <e type="function" args="2">el</e>
-          <e type="operand">t.промеж</e>
-          <e type="operand">8</e>
-          <e type="operand">i</e>
-          <e type="operator" args="2">-</e>
-          <e type="function" args="2">el</e>
-          <e type="operator" args="2">:</e>
-          <e type="function" args="3">for</e>
-          <e type="operand">t.1eval</e>
-          <e type="operand">9</e>
-          <e type="function" args="2">el</e>
           <e type="operand">t.8</e>
-          <e type="operand">11</e>
+          <e type="operand">10</e>
           <e type="function" args="2">el</e>
-          <e type="operator" args="2">:</e>
-          <e type="operand">t.1eval</e>
-          <e type="operand">4</e>
+          <e type="operand">t.2</e>
+          <e type="operand">10</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">t.8</e>
+          <e type="operand">10</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">t.1</e>
+          <e type="operand">10</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">3</e>
           <e type="operand">1</e>
-          <e type="function" args="6">line</e>
+          <e type="function" args="5">mat</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
     </region>
-    <region left="0" top="9450" width="263" height="32" color="#000000" fontSize="10">
-      <math optimize="2">
-        <input>
-          <e type="operand">δD.eval</e>
-          <e type="operand">D.2вн</e>
-          <e type="operand">D.2</e>
-          <e type="operand">D.2вн</e>
-          <e type="operand">0.0001</e>
-          <e type="operand" style="unit">m</e>
-          <e type="operator" args="2">*</e>
-          <e type="operator" args="2">+</e>
-          <e type="function" args="3">range</e>
-          <e type="operator" args="2">:</e>
-        </input>
-      </math>
-    </region>
-    <region left="0" top="9495" width="213" height="32" color="#000000" fontSize="10">
-      <math optimize="2">
+    <region left="522" top="7695" width="169" height="132" color="#000000" fontSize="12">
+      <math>
         <input>
           <e type="operand">T.3</e>
-          <e type="operand">δD.eval</e>
-          <e type="operand">t.1eval</e>
-          <e type="function" args="2">augment</e>
+          <e type="operand">t.8</e>
+          <e type="operand">11</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">t.1</e>
+          <e type="operand">11</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">t.8</e>
+          <e type="operand">11</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">t.2</e>
+          <e type="operand">11</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">t.8</e>
+          <e type="operand">11</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">t.1</e>
+          <e type="operand">11</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">mat</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
     </region>
-    <region left="0" top="9693" width="727" height="23" color="#000000" fontSize="10" isBreakable="false">
-      <text lang="rus" fontFamily="Arial" fontSize="10">
-        <content>
-          <p>Построим график, т.к. цилиндрические координаты симметричны, то построим измение температуры в плоскости:</p>
-        </content>
-      </text>
-    </region>
-    <region left="0" top="9756" width="750" height="578" color="#000000" fontSize="10">
-      <xyplot width="740" height="570" points="100" name="XYPlot">
+    <region left="0" top="7893" width="752" height="581" color="#000000" bgColor="#ffffff" fontSize="12" showInputData="false">
+      <xyplot width="742" height="573" points="100" name="XYPlot">
         <chartstyle usedefault="false" backcolor="White" bordercolor="Black" />
-        <grid gridcolor="DimGray" gridpattern="Dash" gridthickness="1" isxgrid="true" isygrid="true" isy2grid="false" />
-        <xaxes xmin="0.02858" xmax="0.02943" xtick="5E-05" visible="True" decimalplaces="3" numberformat="General" />
-        <yaxes ymin="303" ymax="320" ytick="1" visible="True" decimalplaces="3" numberformat="General" />
+        <grid gridcolor="LightGray" gridpattern="Dash" gridthickness="1" isxgrid="true" isygrid="true" isy2grid="false" />
+        <xaxes xmin="-0.021" xmax="0.021" xtick="0.01" visible="True" decimalplaces="3" numberformat="General" />
+        <yaxes ymin="10" ymax="19" ytick="1" visible="True" decimalplaces="3" numberformat="General" />
         <y2axes isy2axis="false" y2min="-1" y2max="1" y2tick="0.5" visible="True" decimalplaces="3" numberformat="General" />
         <title2d title="" titlefont="Arial, 10pt" titlefontcolor="Black" />
-        <xylabel labelfont="Arial, 10pt" labelfontcolor="Black" tickfont="Arial, 8pt" tickfontcolor="Black" xlabel="D, [м]" ylabel="T,[К]" y2label="y2" />
-        <legend isbordervisible="true" islegendvisible="true" legendbackcolor="White" legendbordercolor="Black" legendfont="Arial, 8pt" legendposition="NorthEast" textcolor="Black" />
+        <xylabel labelfont="Arial, 10pt" labelfontcolor="Black" tickfont="Arial, 8pt" tickfontcolor="Black" xlabel="x" ylabel="y" y2label="y2" />
+        <legend isbordervisible="true" islegendvisible="false" legendbackcolor="White" legendbordercolor="Black" legendfont="Arial, 8pt" legendposition="NorthEast" textcolor="Black" />
         <traces>
-          <trace seriesname="T1" isy2data="false" isvisible="true" plotmethod="Lines" lineantialias="true" linecolor="Blue" linethickness="1" linepattern="Solid" filled="false" hatched="false" fillcolor="64, 0, 0, 255" hatchstyle="Percent20" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
-          <trace seriesname="T2" isy2data="false" isvisible="true" plotmethod="Lines" lineantialias="true" linecolor="Red" linethickness="1" linepattern="Solid" filled="false" hatched="false" fillcolor="64, 255, 0, 0" hatchstyle="Percent20" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
-          <trace seriesname="T3" isy2data="false" isvisible="true" plotmethod="Lines" lineantialias="true" linecolor="Green" linethickness="1" linepattern="Solid" filled="false" hatched="false" fillcolor="64, 0, 128, 0" hatchstyle="Percent20" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
+          <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Lines" lineantialias="true" linecolor="Blue" linethickness="1" linepattern="Solid" filled="false" hatched="false" fillcolor="64, 0, 0, 255" hatchstyle="Percent20" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
+          <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Lines" lineantialias="true" linecolor="Red" linethickness="1" linepattern="Solid" filled="false" hatched="false" fillcolor="64, 255, 0, 0" hatchstyle="Percent20" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
+          <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Lines" lineantialias="true" linecolor="Green" linethickness="1" linepattern="Solid" filled="false" hatched="false" fillcolor="64, 0, 128, 0" hatchstyle="Percent20" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
         </traces>
         <input>
+          <e type="operand">x</e>
           <e type="operand">T.1</e>
+          <e type="function" args="2">augment</e>
+          <e type="operand">x</e>
           <e type="operand">T.2</e>
+          <e type="function" args="2">augment</e>
+          <e type="operand">x</e>
           <e type="operand">T.3</e>
+          <e type="function" args="2">augment</e>
           <e type="operand">3</e>
           <e type="operand">1</e>
           <e type="function" args="5">sys</e>
         </input>
       </xyplot>
-    </region>
-    <region left="0" top="10458" width="705" height="23" color="#000000" fontSize="10">
-      <text lang="rus" fontFamily="Arial" fontSize="10">
-        <content>
-          <p>Определение относительной погрешности произведенных измерений в сравнении с литературными данными:</p>
-        </content>
-      </text>
-    </region>
-    <region left="0" top="10512" width="142" height="50" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">a.л</e>
-          <e type="operand">0.8</e>
-          <e type="operand">10</e>
-          <e type="operand">7</e>
-          <e type="operator" args="1">-</e>
-          <e type="operator" args="2">^</e>
-          <e type="operator" args="2">*</e>
-          <e type="operand" style="unit">m</e>
-          <e type="operand">2</e>
-          <e type="operator" args="2">^</e>
-          <e type="operand" style="unit">s</e>
-          <e type="operator" args="2">/</e>
-          <e type="operator" args="2">*</e>
-          <e type="operator" args="2">:</e>
-        </input>
-      </math>
-    </region>
-    <region left="162" top="10521" width="105" height="41" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">λ.л</e>
-          <e type="operand">0.18</e>
-          <e type="operand" style="unit">W</e>
-          <e type="operand" style="unit">m</e>
-          <e type="operand" style="unit">K</e>
-          <e type="operator" args="2">*</e>
-          <e type="operator" args="2">/</e>
-          <e type="operator" args="2">*</e>
-          <e type="operator" args="2">:</e>
-        </input>
-      </math>
-    </region>
-    <region left="0" top="10593" width="175" height="55" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">δa</e>
-          <e type="operand">a</e>
-          <e type="operand">a.л</e>
-          <e type="operator" args="2">-</e>
-          <e type="function" args="1">abs</e>
-          <e type="operand">a.л</e>
-          <e type="operator" args="2">/</e>
-          <e type="operator" args="2">:</e>
-        </input>
-        <contract>
-          <e type="operand" style="unit">%</e>
-        </contract>
-        <result action="numeric">
-          <e type="operand">17.854</e>
-        </result>
-      </math>
-    </region>
-    <region left="207" top="10593" width="209" height="55" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">δλ</e>
-          <e type="operand">λ.полн</e>
-          <e type="operand">λ.л</e>
-          <e type="operator" args="2">-</e>
-          <e type="function" args="1">abs</e>
-          <e type="operand">λ.л</e>
-          <e type="operator" args="2">/</e>
-          <e type="operator" args="2">:</e>
-        </input>
-        <contract>
-          <e type="operand" style="unit">%</e>
-        </contract>
-        <result action="numeric">
-          <e type="operand">78.2914</e>
-        </result>
-      </math>
     </region>
   </regions>
 </worksheet>
